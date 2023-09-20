@@ -1,15 +1,35 @@
-.blog-box {
-    border: none;
-    padding-bottom: calc(8rem + 4vw)
+.card{
+   border: none !important;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-title h5 {
+    text-decoration-color: #535353;
+}
+
+.card-text p {
+    text-decoration-color: #757575;
+}
+
+.card-link {
+    text-decoration-color: #6b6b6b;
 }
 
 .blog-box {
+    border: none;
+    padding-bottom: 50px;
+}
+
+.blog-box {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    margin-top: 50px;
+    margin-top: 90px;
     z-index: 10;
-    padding-bottom: calc(4rem + 2vw);
+    padding-bottom: 30px;
     text-align: center;
-    border-bottom: 1px solid var(--color-background-contrast)
+    /* border-bottom: 1px solid var(--color-background-contrast) */
 }
 
 .navbar-brand {
@@ -42,6 +62,8 @@
 .rede-jobs{
     margin-top: 24px;
     margin-right: 40px;
+    padding-right: 15px;
+    justify-content: center;
 
 }
 
@@ -81,6 +103,28 @@ header {
     z-index: -1
 }
 
+.header-contact {
+    /* position: relative; */
+    font-size: 100%;
+    background: #ECECEC;
+    text-align: center;
+    /* altura do header */
+    min-height: 260px;
+    /* padding: 0 2rem 8rem; */
+    /* color: #000; */
+    /* display: flex; */
+    flex-direction: row
+
+}
+
+button {
+    border: none !important;
+}
+
+.header-contact button{
+    margin-top: 140px;
+}
+
 @media only screen and (max-width: 640px) {
     .nav-header .logo {
         display:none
@@ -117,6 +161,93 @@ header {
     font-size: 130%;
     margin-top: 3.5rem;
     line-height: 1.4em
+}
+
+.header-footnote{
+    background: #6b6b6b; 
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    height: 50px;
+    width: 100%;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(247 247 247 / var(--tw-text-opacity))
+}
+
+.font-serif {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.pl-2 {
+    padding-left: .5rem;
+}
+
+.md\:flex-row {
+    flex-direction: row;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit
+}
+
+blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre {
+    margin: 0
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+/* .flex-col {
+    flex-direction: column
+} */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+button,[role=button] {
+    cursor: pointer;
+}
+
+/* .hidden {
+    display: none
+} */
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
 }
 
 /* Efeito de tchauzinho e maça*/
