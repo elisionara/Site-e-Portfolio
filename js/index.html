@@ -4,50 +4,47 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/Users/elis/Downloads/site_boots/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Elis|UX/UI Designer</title>
   </head>
-   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ECECEC;">
+
+  <body>
+    <header id="Sobre">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ECECEC;">
         <div class="container-fluid">
           <!-- Imagem de perfil -->
           <a class="navbar-brand" href="#">
             <img src="/Users/elis/Downloads/site_boots/assets/perfil_logo.png" alt="" width="40" height="40">
-          </a>
-          <!-- Navbar com itens TAA SEM LINK -->
-          <div class="collapse navbar-collapse" id="navbarNav">
+          </a> 
+          <!-- Para mobile ele colapsa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                <a class="nav-link active" aria-current="page" href="#Sobre">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Artigos</a>
+                <a class="nav-link" href="#Artigos">Artigos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projetos</a>
+                <a class="nav-link" href="#Projetos">Projetos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contatos</a>
+                <a class="nav-link" href="#Contatos" tabindex="-1" aria-disabled="true">Contatos</a>
               </li>
             </ul>
           </div>
+          <!-- Navbar com itens TAA SEM LINK -->
         </div>
+      </nav>
 
-        <!-- Trocar pelo menu hamburguer - link figma -->
-        <form class="d-flex">
-          <a class="rede-jobs active">
-            <img src="../assets/Figma_logo.png" alt="" width="24" height="39">
-          </a>
-        </form>
-
-    </nav>
-      
-    <header>
-      
       <div class="frame" style="max-width: 1400px">
         <div class="headerContent">
           <p style="font-size: 250%; margin-bottom: 0.75rem; color:#000;"> Olá <span class="wave">👋</span>, </p>
@@ -55,98 +52,116 @@
           <div class="HeaderContent-description"> Mentora de UX/UI Design | Developer Academy <span class="wave">🍎</span></div>
         </div>
       </div>
-
-      <div class="relative bottom-24 self-center h-11 items-center"><div style="overflow: hidden; outline: none; width: 56px; height: 56px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" id="arrowDown_i704" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="32" height="32" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1,0,0,1,4,4)" opacity="1" style="display: block;"><g opacity="0.9487141454938482" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="2" d=" M12,4 C12,4 12,5.489999771118164 12,7.559999942779541"></path></g><g opacity="1" transform="matrix(1,0,0,1,12,17)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="2" d="M0 0"></path></g></g></g></svg></div></div>
     </header>
 
     <!-- Artigos -->
-    <div class="blog-box">
+    <section class="articles" id="Artigos"> 
+      <div class="blog-box">
       <h1>Artigos</h1>
-    </div>
+      </div>
 
     <!-- Descrição dos artigos-->
     <!-- Artigo 1 -->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-5 ms-5 me-5">
       <div class="col">
-        <div class="card">
+        <div class="card-articles">
           <div class="card-body">
-            <h5 class="card-title">Variáveis: Playground traduzido e comentado</h5>
+            <h5 class="card-title">Variáveis</h5>
             <h6 class="card-subtitle mb-4 text-muted">Por Elis, dia 12 de agosto</h6>
-            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link";>leia mais</a></p>
+            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link";><b>leia mais</b></a></p>
           </div>
         </div>
       </div>
 
       <!-- Artigo 2 -->
       <div class="col">
-        <div class="card">
+        <div class="card-articles">
           <div class="card-body">
             <h5 class="card-title">Entendendo um pouco sobre Figma</h5>
             <h6 class="card-subtitle mb-4 text-muted">Por Elis, dia 12 de agosto</h6>
-            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link">leia mais</a></p>
+            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link"><b>leia mais</b></a></p>
           </div>
         </div>
       </div>
 
       <!-- Artigo 3 -->
       <div class="col">
-        <div class="card">
+        <div class="card-articles">
           <div class="card-body">
             <h5 class="card-title">Prototipagem Avançada</h5>
             <h6 class="card-subtitle mb-4 text-muted">Por Elis, dia 12 de agosto</h6>
-            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link">leia mais</a></p>
+            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e <a href="#" class="card-link"><b>leia mais</b></a></p>
           </div>
         </div>
       </div>
-    </div>
-
-      <!-- Projetos -->
+      </div>
+    </section>
+    
+    <!-- Projetos -->
+    <section class="projects" id="Projetos"> 
       <div class="blog-box">
-        <h1>Projetos</h1>
-      </div>
-  
-    <!-- Descrição dos projetos -->
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Projeto 1 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/variables.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Variáveis: Playground traduzido e comentado</h5>
-            <p class="card-text">Playground sobre Variables desenvol vido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e </p>
-          </div>
-        </div>
+    <h1>Projetos</h1>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/entendendo_figma.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Entendendo um pouco sobre Figma</h5>
-            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e </p>
-          </div>
+      <!-- Descrição dos projetos -->
+      <div class="row row-cols-1 row-cols-md-3 g-5 ms-5 me-4">
+          
+        <!-- Projeto 1 -->
+        <div class="col">
+        <div class="card card-projects rounded-3" style="width: 26rem; height: 36rem;">
+            <img src="../assets/variables.png"  class="rounded-3" alt="...">
+        <div class="card-body" style="margin-left: 15px;">
+          <h5 class="card-title">Variáveis</h5>
+          <ul style="margin-top: 15px;">
+            <l><p class="card-text" style="margin-bottom: 10px;">Tipos de variáveis</p></l>
+            <l><p class="card-text" style="margin-bottom: 10px;">Exemplos interativos</p></l>
+            <l><p class="card-text" style="margin-bottom: 10px;">Tipos de combinação com variáveis</p></l>
+          </ul>
         </div>
+        </div>
+        </div>
+
+      <!-- Projeto 2 -->  
+      <div class="col">
+      <div class="card card-projects rounded-3" style="width: 26rem; height: 36rem;">
+          <img src="../assets/entendendo_figma.png" class="rounded-3" alt="...">
+      <div class="card-body" style="margin-left: 15px;">
+        <h5 class="card-title">Entendendo um pouco sobre Figma</h5>
+      <ul style="margin-top: 15px;">
+        <l><p class="card-text" style="margin-bottom: 10px;">Tipos de variáveis</p></l>
+        <l><p class="card-text" style="margin-bottom: 10px;">Exemplos interativos</p></l>
+        <l><p class="card-text" style="margin-bottom: 10px;">Tipos de combinação com variáveis</p></l>
+      </ul>
+      </div>
+      </div>
       </div>
 
       <!-- Projeto 3 -->
       <div class="col">
-        <div class="card h-100">
-          <img src="../assets/prototyping.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Prototipagem Avançada</h5>
-            <p class="card-text">Playground sobre Variables desenvolvido para aprendizagem e aplicação de variáveis, com o propósito de otimizar o processo de criação de componentes e </p>
-          </div>
-        </div>
-      </div>
+      <div class="card card-projects rounded-3" style="width: 26rem; height: 36rem;">
+    <img src="../assets/prototyping.png" class="rounded-3" alt="...">
+    <div class="card-body" style="margin-left: 15px;">
+      <h5 class="card-title">Prototipagem Avançada</h5>
+      <ul style="margin-top: 15px;">
+        <l><p class="card-text" style="margin-bottom: 10px;">Tipos de variáveis</p></l>
+        <l><p class="card-text" style="margin-bottom: 10px;">Exemplos interativos</p></l>
+        <l><p class="card-text" style="margin-bottom: 10px;">Tipos de combinação com variáveis</p></l>
+      </ul>
     </div>
+  </div>
+</div>
+</div>
+    </section>
 
     <!-- Contatos -->
-    <div class="header-contact flex-row items-center justify-center gap-2 md:gap-6">
+    <section class="contacts" id="Contatos">
+      <div class="header-contact flex-row items-center justify-center gap-2 md:gap-6">
+        <h1 class="text-contact"><span class="pro">🧑🏽‍💻</span>Vamos falar de trabalho?</h1>
       <button><img src="../assets/linkedin.png" class="rounded float-left" alt="..." width="49" height="49"></button>
       <button><img src="../assets/github.png" class="rounded float-right" alt="..." width="50" height="49"></button>
       <button> <img src="../assets/email.png" class="rounded float-left" alt="..." width="52" height="51"></button>
-    </div>
+      </div>
+    </section>
 
     <!-- Rodapé -->
     <footer class="header-footnote w-full flex justify-center items-center py-6 flex-col md:flex-row">
